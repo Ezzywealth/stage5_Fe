@@ -82,9 +82,7 @@ const VideoDetails = () => {
 	const path = decodeURIComponent(pathname).split('/').slice(0, 3).join('/') + '/';
 	console.log(path);
 
-	const handleSubmit = (e) => {
-		e.preventDefault();
-	};
+	const handleSubmit = () => {};
 	return (
 		<>
 			<Navbar />
