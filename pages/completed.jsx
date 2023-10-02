@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import AuthNav from './AuthNav';
-
 import { LuCopy } from 'react-icons/lu';
-
 import { useParams } from 'react-router-dom';
-import Navbar from './Navbar';
+import Navbar from '../components./Navbar';
 import { BiEdit } from 'react-icons/bi';
-import Footer from './Footer';
-import Privacy from './Privacy';
-import SaveModal from './saveModal';
+import Footer from '../components./Footer';
+import Privacy from '../components./Privacy';
+import SaveModal from '../components./saveModal';
 
 const data = [
 	{
@@ -70,17 +67,17 @@ const VideoDetails = () => {
 	const { id, slug } = params;
 	const [sent, setSent] = useState(false);
 
-	const fetchVideo = async (id) => {
-		try {
-			const { data } = await axios.post(`https://chrome-extension-y2lb.onrender.com/upload?${id}`);
-			console.log(data);
-			return data;
-		} catch (error) {}
-	};
+	// const fetchVideo = async (id) => {
+	// 	try {
+	// 		const { data } = await axios.post(`https://chrome-extension-y2lb.onrender.com/upload?${id}`);
+	// 		console.log(data);
+	// 		return data;
+	// 	} catch (error) {}
+	// };
 
-	useEffect(() => {
-		fetchVideo(id);
-	}, [id]);
+	// useEffect(() => {
+	// 	fetchVideo(id);
+	// }, [id]);
 
 	const pathname = '';
 	const path = decodeURIComponent(pathname).split('/').slice(0, 3).join('/') + '/';

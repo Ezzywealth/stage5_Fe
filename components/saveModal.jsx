@@ -1,12 +1,12 @@
 import React from 'react';
 import { RiCloseCircleLine } from 'react-icons/ri';
-
+import Image from 'next/image'
 const SaveModal = ({ setSent, email }) => {
 	return (
 		<main className='bg-white px-8 py-8 w-[320px] flex justify-center rounded-lg backdrop-blur-sm backdrop-[#00000052]'>
 			<section className='space-y-4 relative flex flex-col items-center justify-center'>
 				<RiCloseCircleLine size={25} className='absolute  top-4 right-4 text-[#120B48]' onClick={() => setSent(false)} />
-				<img src='success-kite 1.png' alt='success' />
+				<Image height={150} width={150} src='success-kite 1.png' alt='success' />
 				<h2 className='text-[#141414] mt-8 font-semibold'>
 					Your video link has been sent to <span className='text-[#120B48]'>{email}</span>
 				</h2>

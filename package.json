@@ -15,6 +15,7 @@
 		"react-dom": "18.2.0",
 		"react-hook-form": "^7.46.2",
 		"react-icons": "^4.11.0"
+		"axios": ''
 	},
 	"devDependencies": {
 		"autoprefixer": "^10.4.16",
