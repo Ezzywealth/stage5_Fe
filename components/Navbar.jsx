@@ -11,10 +11,10 @@ const Navbar = () => {
 				</Link>
 			</div>
 			<div className='flex gap-8'>
-				<a href='/#features' className='text-[#000000] font-semibold tracking-wider text-lg transition duration-300'>
+				<Link to='/#features' className='text-[#000000] font-semibold tracking-wider text-lg transition duration-300'>
 					Features
 				</a>
-				<a href='/#works' className='text-[#000000] font-semibold tracking-wider text-lg  transition duration-300'>
+				<Link to='/#works' className='text-[#000000] font-semibold tracking-wider text-lg  transition duration-300'>
 					How it works
 				</a>
 			</div>
