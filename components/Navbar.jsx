@@ -13,10 +13,10 @@ const Navbar = () => {
 			<div className='flex gap-8'>
 				<Link to='/#features' className='text-[#000000] font-semibold tracking-wider text-lg transition duration-300'>
 					Features
-				</a>
+				</Link>
 				<Link to='/#works' className='text-[#000000] font-semibold tracking-wider text-lg  transition duration-300'>
 					How it works
-				</a>
+				</Link>
 			</div>
 
 			<Link href='/signin' className=' text-[#120B48] font-semibold text-xl px-4 py-2 rounded-md hover:text-[#29244e] transition duration-300'>
