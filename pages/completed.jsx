@@ -102,12 +102,12 @@ const VideoDetails = () => {
 						<BiEdit onClick={() => setEdit(true)} />
 					</form>
 					<section className='flex flex-col gap-12 items-center mt-8 justify-between'>
-						<form action='' onSubmit={handleSubmit} className='flex items-center  bg-[#B6B3C680]/20 rounded-md py-2 w-full px-6'>
+						<section onSubmit={handleSubmit} className='flex items-center  bg-[#B6B3C680]/20 rounded-md py-2 w-full px-6'>
 							<input type='text' className='w-full placeholder:text-[14px] focus:outline-none bg-transparent' value={receiver} onChange={(e) => setReceiver(e?.target?.value)} placeholder='enter email or receiver' />
 							<button className='bg-[#605C84] py-2 px-4 text-white rounded-[8px] w-auto' onClick={() => setSent(true)}>
 								Send
 							</button>
-						</form>
+						</section>
 						<div className='w-full'>
 							<form action='' onSubmit={handleSubmit} className='w-full '>
 								<label htmlFor='url' className='text-[#141414] font-semibold text-lg'>
