@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { LuCopy } from 'react-icons/lu';
-import { useParams } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import { BiEdit } from 'react-icons/bi';
 import Footer from '../components/Footer';
 import Privacy from '../components/Privacy';
 import SaveModal from '../components/saveModal';
+import Image from 'next/image';
 
 const data = [
 	{
@@ -62,9 +62,8 @@ const VideoDetails = () => {
 	const [receiver, setReceiver] = useState('');
 	const [videoName, setVideoName] = useState('Untitled_Video_20232509');
 	const [edit, setEdit] = useState(true);
-	const params = useParams();
 	const url = 'https://example.com/video1.mp4';
-	const { id, slug } = params;
+	const id = '123456789';
 	const [sent, setSent] = useState(false);
 
 	const fetchVideo = async (id) => {
@@ -132,7 +131,7 @@ const VideoDetails = () => {
 						<div className='flex gap-4'>
 							{data.map((item) => (
 								<div className='flex items-center px-4 py-2 gap-2 border border-[#0A0628] rounded-md' key={item.id}>
-									<img src={item.icon} alt={item.name} width={20} height={20} />
+									<Image src={item.icon} alt={item.name} width={20} height={20} />
 									<p>{item.name}</p>
 								</div>
 							))}
