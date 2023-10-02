@@ -4,7 +4,7 @@ import React from 'react';
 
 const Navbar = () => {
 	return (
-		<nav className=' p-4 px-4 lg:px-16 container xl:px-48 flex items-center justify-between border-b-4 border-[#F4F6F8]'>
+		<nav className=' p-4 px-4 lg:px-16 xl:px-48 flex items-center justify-between border-b-4 border-[#F4F6F8]'>
 			<div className='flex items-center'>
 				<Link href='/' className=''>
 					<Image src='/assets/images/logo.png' alt='Logo' width={160} height={70} className=' mr-2' />
