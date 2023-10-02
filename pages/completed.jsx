@@ -12,17 +12,17 @@ const data = [
 	{
 		id: 1,
 		name: 'Facebook',
-		icon: 'Facebook svg.png',
+		icon: '/assets/images/Facebook svg.png',
 	},
 	{
 		id: 2,
 		name: 'WhatsApp',
-		icon: 'WhatsApp svg.png',
+		icon: '/assets/images/WhatsApp svg.png',
 	},
 	{
 		id: 3,
 		name: 'Telegram',
-		icon: 'Artboard.png',
+		icon: '/assets/images/Artboard.png',
 	},
 ];
 
