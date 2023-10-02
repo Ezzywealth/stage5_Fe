@@ -78,11 +78,9 @@ const VideoDetails = () => {
 		fetchVideo(id);
 	}, [id]);
 
-	const pathname = '';
-	const path = decodeURIComponent(pathname).split('/').slice(0, 3).join('/') + '/';
-	console.log(path);
-
-	const handleSubmit = () => {};
+	const handleSubmit = () => {
+		console.log('submit');
+	};
 	return (
 		<>
 			<Navbar />
