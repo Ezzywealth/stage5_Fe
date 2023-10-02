@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { BsArrowRightShort } from 'react-icons/bs';
 
@@ -12,9 +13,11 @@ const HeroSection = () => {
 				<p className='text-lg font-normal text-[#000000]/75 mb-8'>
 					Help your friends and loved ones by creating and sending <br /> videos on how to get things done on a website.
 				</p>
-				<button className='bg-[#120B48] mt-4 text-white  text-lg font-semibold px-6 py-3 rounded-[8px] flex items-center gap-2'>
-					Install HelpMeOut <BsArrowRightShort size={35} />
-				</button>
+				<Link href='/store'>
+					<button className='bg-[#120B48] mt-4 text-white  text-lg font-semibold px-6 py-3 rounded-[8px] flex items-center gap-2'>
+						Install HelpMeOut <BsArrowRightShort size={35} />
+					</button>
+				</Link>
 			</div>
 
 			<div className='w-full lg:w-1/2 grid grid-cols-2 gap-6'>
